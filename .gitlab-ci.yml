@@ -8,4 +8,4 @@ deploy:
   before_script:
     - npm install -g @liara/cli
   script:
-    - liara deploy -p cdtest --no-project-logs --api-token $TOKEN
+    - liara deploy -p hello-world --no-project-logs --api-token $TOKEN
