@@ -1,0 +1,10 @@
+{
+    "platform": "node",
+    "app": "hello-world",
+    "port": 8000,
+    "node": {
+        "version": "12",
+        "timezone": "Asia/tehran",
+        "npmAudit": true
+      }
+  }

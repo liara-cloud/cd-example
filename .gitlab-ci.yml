@@ -1,0 +1,11 @@
+image: node:12-alpine
+
+stages:
+  - update-liara
+
+Update-Liara:
+  stage: update-liara
+  before_script:
+    - npm install -g @liara/cli
+  script:
+    - liara deploy -p cdtest --no-project-logs --api-token $TOKEN
