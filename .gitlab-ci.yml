@@ -5,6 +5,8 @@ stages:
 
 deploy:
   stage: update-production
+  only:
+    - master  
   before_script:
     - npm install -g @liara/cli
   script:
