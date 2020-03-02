@@ -8,6 +8,6 @@ deploy:
   only:
     - master  
   before_script:
-    - npm install -g @liara/cli
+    - npm install -g @liara/cli@2
   script:
-    - liara deploy -p $PROJECT_NAME --no-project-logs --api-token $TOKEN
+    - liara deploy --app $PROJECT_NAME --detach --api-token $TOKEN
